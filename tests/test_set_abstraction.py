@@ -1,4 +1,4 @@
-from pointnet2.modules.set_abstraction import (
+from pointnet.modules.set_abstraction import (
     PointNetFeaturePropagation,
     PointNetSetAbstraction,
     PointNetSetAbstractionGlobal,

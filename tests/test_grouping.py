@@ -1,4 +1,4 @@
-from pointnet2.modules.grouping import ball_query, group_points, square_distance
+from pointnet.modules.grouping import ball_query, group_points, square_distance
 
 
 def test_square_distance_shape():

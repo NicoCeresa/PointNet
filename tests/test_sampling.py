@@ -1,4 +1,4 @@
-from pointnet2.modules.sampling import farthest_point_sample, index_points
+from pointnet.modules.sampling import farthest_point_sample, index_points
 
 
 def test_fps_output_shape():
