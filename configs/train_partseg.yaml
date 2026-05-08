@@ -1,0 +1,23 @@
+model:
+  task: partseg
+  num_classes: 50          # total part labels across all categories
+  num_categories: 16
+
+data:
+  dataset: shapenet
+  data_dir: data/shapenet
+  num_points: 2048
+  batch_size: 16
+  num_workers: 4
+  augment: true
+
+train:
+  epochs: 200
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  grad_clip: 10.0
+
+logger:
+  project: pointnet2
+  name: partseg_ssg
+  log_every_n_steps: 10

@@ -1,0 +1,23 @@
+model:
+  task: cls
+  num_classes: 40
+  use_msg: false          # set true for MSG variant (~92.8% vs 91.9%)
+
+data:
+  dataset: modelnet40
+  data_dir: data/modelnet40
+  num_points: 1024
+  batch_size: 32
+  num_workers: 4
+  augment: true           # random jitter + scale + rotation
+
+train:
+  epochs: 200
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  grad_clip: 10.0
+
+logger:
+  project: pointnet2
+  name: cls_ssg
+  log_every_n_steps: 10

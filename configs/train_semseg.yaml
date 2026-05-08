@@ -1,0 +1,25 @@
+model:
+  task: semseg
+  num_classes: 13          # S3DIS semantic categories
+  in_feature_dim: 6        # r, g, b + normalized x, y, z (beyond the xyz coords)
+
+data:
+  dataset: s3dis
+  data_dir: data/s3dis
+  num_points: 4096
+  block_size: 1.0          # room block size in metres
+  batch_size: 16
+  num_workers: 4
+  test_area: 5             # Area 5 held out (standard protocol)
+  augment: true
+
+train:
+  epochs: 100
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  grad_clip: 10.0
+
+logger:
+  project: pointnet2
+  name: semseg_s3dis
+  log_every_n_steps: 10
