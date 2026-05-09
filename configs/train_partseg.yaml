@@ -5,7 +5,7 @@ model:
 
 data:
   dataset: shapenet
-  data_dir: data/shapenet
+  data_root: ${oc.env:DATASETS_ROOT}/shapenet  # set DATASETS_ROOT in your environment
   num_points: 2048
   batch_size: 16
   num_workers: 4

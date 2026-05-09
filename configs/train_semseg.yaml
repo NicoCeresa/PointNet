@@ -5,7 +5,7 @@ model:
 
 data:
   dataset: s3dis
-  data_dir: data/s3dis
+  data_root: ${oc.env:DATASETS_ROOT}/s3dis  # set DATASETS_ROOT in your environment
   num_points: 4096
   block_size: 1.0          # room block size in metres
   batch_size: 16

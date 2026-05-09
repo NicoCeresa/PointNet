@@ -63,7 +63,6 @@ pillow==12.2.0
 platformdirs==4.9.6
 plotly==6.7.0
 pluggy==1.6.0
--e git+https://github.com/NicoCeresa/PointNet.git@5d73934d738489727d1afffcab4e3cb5cba05da7#egg=pointnet2
 prompt_toolkit==3.0.52
 propcache==0.5.2
 protobuf==7.34.1

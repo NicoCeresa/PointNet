@@ -5,7 +5,7 @@ model:
 
 data:
   dataset: modelnet40
-  data_dir: data/modelnet40
+  data_root: ${oc.env:DATASETS_ROOT}/modelnet40  # set DATASETS_ROOT in your environment
   num_points: 1024
   batch_size: 32
   num_workers: 4
